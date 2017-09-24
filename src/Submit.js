@@ -6,7 +6,6 @@ import Column from './Column'
 import Label from './Label'
 import Input from './Input'
 import SubmitButton from './SubmitButton'
-import cxs from 'cxs/component'
 
 const Submit = () => (
   <section id="submit">

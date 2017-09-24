@@ -1,6 +1,6 @@
 {
   "name": "blinkcare.github.io",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Blink site",
   "scripts": {
     "build": "node build.js",
@@ -8,7 +8,7 @@
     "card-dev": "repng src/Card.js --dev -P 8081"
   },
   "author": "Lachlan Campbell",
-  "license": "MIT",
+  "license": "GPL-3.0+",
   "devDependencies": {
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",

@@ -2,4 +2,4 @@
 
 Website for Blink.
 
-MIT license
+https://blinkcare.github.io
