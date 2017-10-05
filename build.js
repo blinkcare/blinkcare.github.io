@@ -5,20 +5,22 @@ const { renderToStaticMarkup } = require('react-dom/server')
 const h = require('react').createElement
 const cxs = require('cxs')
 const data = require('./data')
-const colors = require('./src/colors')
+const colors = require('./src/colors').default
 const App = require('./src/App').default
 
 const cx = cxs({
   fontFamily:
     '-apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", sans-serif',
-  color: colors.black,
+  backgroundColor: colors.blue,
+  color: colors.white,
+  textAlign: 'center',
   lineHeight: '1.5'
 })
 
 const body = renderToStaticMarkup(h(App))
 const css = cxs.css()
 
-const template = ({ body, id, css }) => `<!DOCTYPE html>
+const template = ({ body, css }) => `<!DOCTYPE html>
 <title>${data.name}</title>
 <meta charset='utf-8'>
 <meta name='twitter:card' content='summary_large_image'>
@@ -32,12 +34,12 @@ const template = ({ body, id, css }) => `<!DOCTYPE html>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='theme-color' content='${colors.blue}'>
 <style>*{box-sizing:border-box}body{margin:0}${css}</style>
-<div id='${id}' class='${cx}'>
+<body class='${cx}'>
 ${body}
-</div>
+</body>
 `
 
-const html = template({ body, css, id: 'app' })
+const html = template({ body, css })
 
 const filename = path.join(__dirname, './index.html')
 fs.writeFileSync(filename, html)

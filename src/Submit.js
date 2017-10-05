@@ -15,17 +15,11 @@ const Submit = () => (
       action="https://formspree.io/atlachlanjc+blink@gmail.com"
       method="POST"
     >
-      <Columns>
-        <Column>
-          <Label>
-            Email
-            <Input type="email" name="email" placeholder="you@icloud.com" />
-          </Label>
-        </Column>
-        <Column style={{ alignSelf: 'flex-end' }}>
-          <SubmitButton type="submit" />
-        </Column>
-      </Columns>
+      <Label>
+        Email
+        <Input type="email" name="email" placeholder="you@gmail.com" />
+      </Label>
+      <SubmitButton type="submit" />
     </form>
   </section>
 )

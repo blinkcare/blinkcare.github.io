@@ -1,6 +1,6 @@
 import React from 'react'
 import Box from './Box'
-import Columns from './Columns'
+import Flex from './Flex'
 import Column from './Column'
 import Bar from './Bar'
 import Text from './Text'
@@ -12,14 +12,10 @@ import colors from './colors'
 const Footer = () => (
   <footer>
     <Bar />
-    <Columns>
-      <Column>
-        <Text children="© 2017" />
-      </Column>
-      <Column>
-        <Link href={data.repo} children="GitHub" />
-      </Column>
-    </Columns>
+    <Flex align="center" justify="center">
+      <Text children="© 2017" mr={3} />
+      <Link href={data.repo} children="GitHub" />
+    </Flex>
   </footer>
 )
 

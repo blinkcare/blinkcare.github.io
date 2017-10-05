@@ -8,20 +8,19 @@ import colors from './colors'
 
 const Header = () => (
   <header>
-    <Logo size={72} fill={colors.blue} />
+    <Logo size={96} fill={colors.white} />
     <Title>{data.name}</Title>
-    <Text f={3} mb={2}>
+    <Text f={3} mt={0} mb={2}>
       {data.description}
     </Text>
     <Text>
-      By <Author href="https://github.com/kusti8" children="@kusti8" />,{' '}
-      <Author href="https://github.com/lachlanjc" children="@lachlanjc" />,{' '}
+      <Author href="https://github.com/kusti8" children="@kusti8" />
+      <Author href="https://github.com/lachlanjc" children="@lachlanjc" />
       <Author href="https://github.com/shamdasani" children="@shamdasani" />
-      {', and '}
       <Author
         href="https://github.com/praveenravi77"
         children="@praveenravi77"
-      />{' '}
+      />
     </Text>
     <Text mt={4}>
       At PennApps XVI, Blink won the Health Route and the Most Unique Hack ($1k

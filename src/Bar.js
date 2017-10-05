@@ -5,9 +5,9 @@ import media from './media'
 const Bar = cxs(Box)(props => ({
   width: 128,
   height: 4,
-  backgroundColor: props.theme('colors.blue'),
-  // marginLeft: 'auto',
-  // marginRight: 'auto',
+  backgroundColor: props.theme('colors.white'),
+  marginLeft: 'auto',
+  marginRight: 'auto',
   marginTop: props.theme.space[4],
   marginBottom: props.theme.space[4]
 }))
