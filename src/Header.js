@@ -6,6 +6,14 @@ import Author from './Author'
 import data from '../data'
 import colors from './colors'
 
+import cxs from 'cxs/component'
+const Label = cxs('span')(props => ({
+  display: 'block',
+  textTransform: 'uppercase',
+  letterSpacing: '.1em',
+  fontWeight: '600'
+}))
+
 const Header = () => (
   <header>
     <Logo size={96} fill={colors.white} />
@@ -23,8 +31,8 @@ const Header = () => (
       ))}
     </Text>
     <Text mt={4}>
-      At PennApps XVI, Blink won the Health Route and the Most Unique Hack ($1k
-      grant from 1517 Fund).
+      <Label>PennApps XVI Winner</Label>
+      Health Route and Most Unique Hack ($1k grant from 1517 Fund)
     </Text>
   </header>
 )
