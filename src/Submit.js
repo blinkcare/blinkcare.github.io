@@ -5,7 +5,10 @@ import Columns from './Columns'
 import Column from './Column'
 import Label from './Label'
 import Input from './Input'
-import SubmitButton from './SubmitButton'
+
+import cxs from 'cxs/component'
+import btn from './btn'
+const Button = cxs('input')(props => btn(props))
 
 const Submit = () => (
   <section id="submit">
@@ -19,7 +22,7 @@ const Submit = () => (
         Email
         <Input type="email" name="email" placeholder="you@gmail.com" />
       </Label>
-      <SubmitButton type="submit" />
+      <Button type="submit" />
     </form>
   </section>
 )

@@ -7,6 +7,9 @@ import data from '../data'
 import colors from './colors'
 
 import cxs from 'cxs/component'
+import btn from './btn'
+const Button = cxs('a')(props => btn(props))
+
 const Label = cxs('span')(props => ({
   display: 'block',
   textTransform: 'uppercase',
@@ -30,7 +33,13 @@ const Header = () => (
         />
       ))}
     </Text>
-    <Text mt={4}>
+    <Text my={4}>
+      <Button
+        href="https://devpost.com/software/blink-9o2iln"
+        children="Read more"
+      />
+    </Text>
+    <Text>
       <Label>PennApps XVI Winner</Label>
       Health Route and Most Unique Hack ($1k grant from 1517 Fund)
     </Text>
