@@ -14,13 +14,13 @@ const Header = () => (
       {data.description}
     </Text>
     <Text>
-      <Author href="https://github.com/kusti8" children="@kusti8" />
-      <Author href="https://github.com/lachlanjc" children="@lachlanjc" />
-      <Author href="https://github.com/shamdasani" children="@shamdasani" />
-      <Author
-        href="https://github.com/praveenravi77"
-        children="@praveenravi77"
-      />
+      {['kusti8', 'lachlanjc', 'shamdasani', 'praveenravi77'].map(u => (
+        <Author
+          href={`https://github.com/${u}`}
+          key={`@${u}`}
+          children={`@${u}`}
+        />
+      ))}
     </Text>
     <Text mt={4}>
       At PennApps XVI, Blink won the Health Route and the Most Unique Hack ($1k
