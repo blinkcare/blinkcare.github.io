@@ -1,7 +1,6 @@
 import React from 'react'
 import Bar from './Bar'
 import Heading from './Heading'
-import Text from './Text'
 import cxs from 'cxs/component'
 
 const Embed = cxs('div')(props => ({
