@@ -4,6 +4,7 @@
   "description": "Blink site",
   "scripts": {
     "build": "node build.js",
+    "start": "serve",
     "card": "repng src/Card.js -d 1 -w 1024 -h 768 -o . -f card",
     "card-dev": "repng src/Card.js --dev -P 8081"
   },
@@ -18,6 +19,9 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "styled-system": "^1.0.8"
+  },
+  "dependencies": {
+    "serve": "^6.3.1"
   },
   "repository": {
     "type": "git",
