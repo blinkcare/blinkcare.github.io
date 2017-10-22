@@ -2,4 +2,4 @@
 
 Website for Blink.
 
-https://blinkcare.github.io
+https://blink.care
