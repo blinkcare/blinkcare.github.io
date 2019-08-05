@@ -28,7 +28,8 @@ const Header = () => (
       {['kusti8', 'lachlanjc', 'shamdasani', 'praveenravi77'].map(u => (
         <Author
           href={`https://github.com/${u}`}
-          key={`@${u}`}
+          target="_blank"
+          key={u}
           children={`@${u}`}
         />
       ))}

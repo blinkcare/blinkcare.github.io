@@ -2,12 +2,16 @@ import React from 'react'
 import Bar from './Bar'
 import Heading from './Heading'
 import cxs from 'cxs/component'
+import btn from './btn'
+
+const Button = cxs('a')(props => btn(props))
 
 const Embed = cxs('div')(props => ({
   position: 'relative',
   height: 0,
   padding: 0,
   paddingBottom: `${(props.ratio || 9 / 16) * 100}%`,
+  marginBottom: props.theme('space[4]'),
   overflow: 'hidden',
   '& > iframe': {
     position: 'absolute',
@@ -31,6 +35,7 @@ const Demo = () => (
         allowFullScreen
       />
     </Embed>
+    <Button href="https://blink.now.sh" children="View app" />
   </section>
 )
 
