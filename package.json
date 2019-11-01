@@ -16,7 +16,7 @@
     "babel-register": "^6.26.0",
     "cxs": "^5.1.0",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react-dom": "^16.0.1",
     "styled-system": "^1.0.8"
   },
   "repository": {
